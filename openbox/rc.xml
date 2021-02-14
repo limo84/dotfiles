@@ -427,11 +427,17 @@
       <action name="Execute">
         <command>amixer set Master 5%+</command>
       </action>
+      <action name="Execute">
+        <command>/scripts/test</command>
+      </action>
     </keybind>
 
     <keybind key="W-0x52">
       <action name="Execute">
         <command>amixer set Master 5%-</command>
+      </action>
+      <action name="Execute">
+        <command>/scripts/test</command>
       </action>
     </keybind>
 
