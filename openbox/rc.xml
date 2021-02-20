@@ -316,6 +316,31 @@
       </action>
     </keybind>
 
+    <!-- CUSTOM ACTIONS -->
+    <keybind key="W-Down">
+      <action name="NextWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+
+    <keybind key="W-Up">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+
+    <keybind key="W-x">
+      <action name="Close"/>
+    </keybind>
+
     <!-- Keybindings for running applications -->
     <keybind key="W-space">
       <action name="Execute">
@@ -345,7 +370,7 @@
 
     <keybind key="W-t">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>alacritty</command>
       </action>
     </keybind>
 
@@ -807,7 +832,9 @@
 
     <application name="code*">
       <desktop>1</desktop>
-      <monitor>2</monitor>
+      <position>
+        <monitor>1</monitor>
+      </position>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
@@ -819,16 +846,33 @@
       <focus>no</focus>
     </application>
 
-    <application name="xfce4-terminal">
+    <application name="Alacritty">
       <desktop>1</desktop>
-      <fullscreen>yes</fullscreen>
       <position force="no">
-        <x>0</x>
-        <y>0</y>
+        <x>center</x>
+        <y>center</y>
         <monitor>1</monitor>
       </position>
       <decor>no</decor>
       <iconic>no</iconic>
+    </application>
+
+    <application name="Slay*">
+      <desktop>1</desktop>
+      <position force="yes">
+        <monitor>2</monitor>
+      </position>
+      <fullscreen>yes</fullscreen>
+    </application>
+
+    <application name="UNDERTALE">
+      <desktop>1</desktop>
+      <position force="no">
+        <x>100</x>
+        <y>100</y>
+        <monitor>1</monitor>
+      </position>
+      <fullscreen>no</fullscreen>
     </application>
     <!--
   # this is an example with comments through out. use these to make your
