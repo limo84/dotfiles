@@ -317,6 +317,10 @@
     </keybind>
 
     <!-- CUSTOM ACTIONS -->
+    <keybind key="W-Return">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
     <keybind key="W-Down">
       <action name="NextWindow">
         <finalactions>
