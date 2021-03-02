@@ -341,6 +341,15 @@
       <action name="Close"/>
     </keybind>
 
+    <keybind key="W-2">
+      <action name="MoveResizeTo">
+        <!-- center the window on the first monitor -->
+        <x>center</x>
+        <y>center</y>
+        <monitor>next</monitor>
+      </action>
+    </keybind>
+
     <!-- Keybindings for running applications -->
     <keybind key="W-space">
       <action name="Execute">
