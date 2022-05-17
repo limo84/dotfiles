@@ -1,0 +1,6 @@
+xrandr --output DVI-D-0 --pos 0x0 --output VGA-0 --pos 1920x0 --output HDMI-0 --pos 3840x0
+picom &
+tint2 &
+nitrogen --restore &
+sleep 2 && ~/scripts/start_conky.sh &
+sleep 2 && ~/scripts/startup.sh &
