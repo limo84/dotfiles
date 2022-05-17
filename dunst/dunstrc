@@ -1,9 +1,10 @@
 [global]
     ### Display ###
 
-    # Which monitor should the notifications be displayed on.
-
     monitor = 1
+    frame_color = "#788388"
+    font = Noto Sans 10
+
 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
@@ -45,7 +46,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 0
+    transparency = 15
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
@@ -65,10 +66,9 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 1
 
-    # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+
 
     # Define a color for the separator.
     # possible values are:
@@ -90,7 +90,7 @@
 
     ### Text ###
 
-    font = Monospace 8
+
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -176,10 +176,11 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 128
 
     # Paths to default icons.
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
     ### History ###
 
@@ -257,9 +258,9 @@
     # * close_all: Close all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
-    mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
+    mouse_left_click = do_action
+    # mouse_middle_click = do_action, close_current
+    mouse_right_click = close_current
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.
@@ -279,7 +280,7 @@
     # Xev might be helpful to find names for keys.
 
     # Close notification.
-    close = ctrl+space
+    # close = ctrl+space
 
     # Close all notifications.
     close_all = ctrl+shift+space
@@ -288,33 +289,29 @@
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1". Make sure this key actually exists on your keyboard layout,
     # e.g. check output of 'xmodmap -pke'
-    history = ctrl+grave
+    history = ctrl+space
 
     # Context menu.
     context = ctrl+shift+period
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
     foreground = "#888888"
     timeout = 10
-    # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#263238"
+    foreground = "#F9FAF9"
+    highlight = "#FF0000"
     timeout = 10
-    # Icon for notifications with normal urgency, uncomment to enable
-    #icon = /path/to/icon
+    icon = /usr/share/icons/Adwaita/32x32/devices/audio-speakers-symbolic.symbolic.png
 
 [urgency_critical]
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
 
 # Every section that isn't one of the above is interpreted as a rules to
