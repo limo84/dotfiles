@@ -1,7 +1,3 @@
-.
-..
-.git
-.gitignore
 .vscode
 akonadi
 akonadi-firstrunrc
@@ -22,7 +18,6 @@ arkrc
 aseprite
 autostart
 autostart-scripts
-awesome
 baloofileinformationrc
 baloofilerc
 bless
@@ -37,7 +32,6 @@ Code - OSS
 code-oss
 composer
 configstore
-conky
 CrossCode
 dconf
 Dexed.settings
@@ -160,7 +154,6 @@ octopi
 oktetarc
 okularpartrc
 okularrc
-openbox
 Owlboy
 ownCloud
 paradox-launcher-v2

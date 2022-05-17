@@ -1,0 +1,4 @@
+#!/bin/sh
+# vim: set ft=sh
+
+echo "hello world"
