@@ -376,11 +376,7 @@
 
     <keybind key="W-p">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>/home/limo/programs/PhpStorm-203.6682.180/bin/phpstorm.sh</command>
+        <command>pavucontrol</command>
       </action>
     </keybind>
 
@@ -440,12 +436,15 @@
 
     <keybind key="W-l">
       <action name="Execute">
-        <command>pavucontrol</command>
+        <command>xscreensaver-command --lock</command>
       </action>
     </keybind>
 
     <keybind key="W-F9">
       <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+        </startupnotify>
         <command>rhythmbox</command>
       </action>
     </keybind>
