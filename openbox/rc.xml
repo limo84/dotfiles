@@ -442,10 +442,10 @@
 
     <keybind key="W-F9">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-        </startupnotify>
         <command>rhythmbox</command>
+      </action>
+      <action name="GoToDesktop">
+        <to>2</to>
       </action>
     </keybind>
 
