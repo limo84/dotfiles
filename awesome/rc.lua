@@ -62,6 +62,7 @@ function print_debug (text_to_print)
                      text = text_to_print })
 end
 
+-- git test
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.floating,
