@@ -487,19 +487,13 @@
 
     <keybind key="W-0x56">
       <action name="Execute">
-        <command>amixer set Master 5%+</command>
-      </action>
-      <action name="Execute">
-        <command>/scripts/test</command>
+        <command>volume_change.sh +</command>
       </action>
     </keybind>
 
     <keybind key="W-0x52">
       <action name="Execute">
-        <command>amixer set Master 5%-</command>
-      </action>
-      <action name="Execute">
-        <command>/scripts/test</command>
+        <command>volume_change.sh -</command>
       </action>
     </keybind>
 
@@ -868,7 +862,9 @@
     <manageDesktops>yes</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
+
   <applications>
+
     <application name="code*">
       <desktop>1</desktop>
       <position>
@@ -877,12 +873,14 @@
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
+
     <application name="rhythmbox">
       <desktop>2</desktop>
       <monitor>2</monitor>
       <maximized>yes</maximized>
       <focus>no</focus>
     </application>
+
     <application name="Alacritty">
       <desktop>1</desktop>
       <position force="no">
@@ -893,6 +891,7 @@
       <decor>no</decor>
       <iconic>no</iconic>
     </application>
+
     <application name="Slay*">
       <desktop>1</desktop>
       <position force="yes">
@@ -900,6 +899,7 @@
       </position>
       <fullscreen>yes</fullscreen>
     </application>
+
     <application name="UNDERTALE">
       <desktop>1</desktop>
       <position force="no">
@@ -909,6 +909,7 @@
       </position>
       <fullscreen>no</fullscreen>
     </application>
+
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

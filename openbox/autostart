@@ -5,4 +5,4 @@ nitrogen --restore &
 xscreensaver -no-splash &
 rhythmbox &
 sleep 2 && ~/scripts/start_conky.sh &
-sleep 2 && ~/scripts/startup.sh &
+# sleep 2 && ~/scripts/startup.sh &

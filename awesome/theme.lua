@@ -1,5 +1,5 @@
 ---------------------------
--- Default awesome theme --
+-- Not Default anymore awesome theme --
 ---------------------------
 
 local theme_assets = require("beautiful.theme_assets")
@@ -11,7 +11,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "sans 8"
+theme.font          = "JetBrainsMono Nerd Font 12"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
