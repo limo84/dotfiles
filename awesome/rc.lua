@@ -324,14 +324,8 @@ globalkeys = gears.table.join(
   end),
 
   -- STANDARD PROGRAMS ----------------------------------------------
-  awful.key({modkey}, "t", function ()
-    awful.spawn(terminal) 
-    naughty.notify({ preset = naughty.config.presets.critical,
-                     title = "Title",
-                     text = "Start the Terminal dammit" })
-
-  end,
-  {description = "open a terminal", group = "launcher"}),
+  awful.key({modkey}, "t", function () awful.spawn(terminal)  end,
+    {description = "open a terminal", group = "launcher"}),
     
   awful.key({modkey}, "c", function () awful.spawn(ide) end,
     {description = "open ide", group = "launcher"}),
